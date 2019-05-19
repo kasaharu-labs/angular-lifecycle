@@ -20,6 +20,8 @@ export class ChildComponent
   implements OnInit, OnChanges, OnDestroy, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
   @Input()
   parentComponentName: string;
+  @Input()
+  count: number;
   constructor() {}
 
   ngOnChanges() {
