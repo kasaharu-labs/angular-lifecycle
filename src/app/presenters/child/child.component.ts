@@ -8,6 +8,7 @@ import {
   OnChanges,
   OnDestroy,
   OnInit,
+  Input,
 } from '@angular/core';
 
 @Component({
@@ -17,6 +18,8 @@ import {
 })
 export class ChildComponent
   implements OnInit, OnChanges, OnDestroy, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
+  @Input()
+  parentComponentName: string;
   constructor() {}
 
   ngOnChanges() {

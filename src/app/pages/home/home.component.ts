@@ -17,6 +17,7 @@ import {
 })
 export class HomeComponent
   implements OnInit, OnChanges, OnDestroy, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
+  componentName: 'HomeComponent';
   constructor() {}
 
   ngOnChanges() {
