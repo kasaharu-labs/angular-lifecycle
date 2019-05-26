@@ -54,4 +54,6 @@ export class HomeComponent
   ngOnDestroy() {
     console.log('HomeComponent : ngOnDestroy -----');
   }
+
+  increment() {}
 }
