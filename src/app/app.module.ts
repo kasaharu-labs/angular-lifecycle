@@ -7,9 +7,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { ChildComponent } from './presenters/child/child.component';
 import { AnotherChildComponent } from './presenters/another-child/another-child.component';
 import { Child2Component } from './presenters/child2/child2.component';
+import { Child3Component } from './presenters/child3/child3.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ChildComponent, AnotherChildComponent, Child2Component],
+  declarations: [AppComponent, HomeComponent, ChildComponent, AnotherChildComponent, Child2Component, Child3Component],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
