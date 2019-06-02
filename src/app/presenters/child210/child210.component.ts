@@ -50,4 +50,8 @@ export class Child210Component
   ngOnDestroy() {
     console.log('    Child210 : ngOnDestroy');
   }
+
+  clickButton() {
+    console.log('    Child210 : Click button');
+  }
 }
