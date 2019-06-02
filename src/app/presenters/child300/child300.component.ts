@@ -3,6 +3,7 @@ import {
   AfterContentInit,
   AfterViewChecked,
   AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   DoCheck,
   OnChanges,
@@ -14,6 +15,7 @@ import {
   selector: 'app-child300',
   templateUrl: './child300.component.html',
   styleUrls: ['./child300.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Child300Component
   implements OnInit, OnChanges, OnDestroy, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {

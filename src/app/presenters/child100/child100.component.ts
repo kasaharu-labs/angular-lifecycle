@@ -3,18 +3,20 @@ import {
   AfterContentInit,
   AfterViewChecked,
   AfterViewInit,
+  ChangeDetectionStrategy,
   Component,
   DoCheck,
+  Input,
   OnChanges,
   OnDestroy,
   OnInit,
-  Input,
 } from '@angular/core';
 
 @Component({
   selector: 'app-child100',
   templateUrl: './child100.component.html',
   styleUrls: ['./child100.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ChildComponent100
   implements OnInit, OnChanges, OnDestroy, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
