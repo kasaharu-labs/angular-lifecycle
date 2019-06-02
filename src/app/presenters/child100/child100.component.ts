@@ -12,11 +12,11 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'app-child',
-  templateUrl: './child.component.html',
-  styleUrls: ['./child.component.scss'],
+  selector: 'app-child100',
+  templateUrl: './child100.component.html',
+  styleUrls: ['./child100.component.scss'],
 })
-export class ChildComponent
+export class ChildComponent100
   implements OnInit, OnChanges, OnDestroy, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
   @Input()
   parentComponentName: string;
@@ -25,34 +25,34 @@ export class ChildComponent
   constructor() {}
 
   ngOnChanges() {
-    console.log('ChildComponent : ngOnChanges -----');
+    console.log('  Child100 : ngOnChange');
   }
 
   ngOnInit() {
-    console.log('ChildComponent : ngOnInit -----');
+    console.log('  Child100 : ngOnInit');
   }
 
   ngDoCheck() {
-    console.log('ChildComponent : ngDoCheck -----');
+    console.log('  Child100 : ngDoCheck');
   }
 
   ngAfterContentInit() {
-    console.log('ChildComponent : ngAfterContentInit -----');
+    console.log('  Child100 : ngAfterContentInit');
   }
 
   ngAfterContentChecked() {
-    console.log('ChildComponent : ngAfterContentChecked -----');
+    console.log('  Child100 : ngAfterContentChecked');
   }
 
   ngAfterViewInit() {
-    console.log('ChildComponent : ngAfterViewInit -----');
+    console.log('  Child100 : ngAfterViewInit');
   }
 
   ngAfterViewChecked() {
-    console.log('ChildComponent : ngAfterViewChecked -----');
+    console.log('  Child100 : ngAfterViewChecked');
   }
 
   ngOnDestroy() {
-    console.log('ChildComponent : ngOnDestroy -----');
+    console.log('  Child100 : ngOnDestroy');
   }
 }
