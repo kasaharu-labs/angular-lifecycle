@@ -55,5 +55,7 @@ export class HomeComponent
     console.log('HomeComponent : ngOnDestroy -----');
   }
 
-  increment() {}
+  increment() {
+    this.counterService.countup();
+  }
 }

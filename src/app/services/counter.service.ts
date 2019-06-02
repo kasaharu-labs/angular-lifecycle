@@ -5,6 +5,11 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class CounterService {
-  counter$ = new BehaviorSubject<number>(0);
+  private _count = 0;
+  counter$ = new BehaviorSubject<number>(this._count);
   constructor() {}
+
+  countup() {
+    this.counter$.next(++this._count);
+  }
 }
